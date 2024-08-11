@@ -1,7 +1,7 @@
-- 👋 Hi, I’m @Arynshr
+- 👋 Hi, I’m @Arynshr, a Data_Sci(Machine learning) enthusiast
 - 🏫 Sophomore in JIIT Noida
 - 👀 I’m interested in machine learning algorithms and its application in domain of finance
-- 🌱 I’m currently learning cpp and dsa as a sophomore 
+- 🌱 I’m currently learning dsa with cpp and frontend development as a sophomore
 
 <!---
 Arynshr/Arynshr is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
