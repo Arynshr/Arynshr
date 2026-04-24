@@ -19,7 +19,6 @@ I enjoy building systems that are reliable and efficient — APIs that scale, pi
 ```python
 aryan = {
     "role"      : "Software Engineer  →  Backend · AI/ML · Systems",
-    "location"  : "Delhi NCR, India",
     "education" : "B.Tech CSE · JIIT Noida",
     "building"  : ["production APIs", "retrieval systems", "LLM pipelines"],
     "available" : True,   # SDE · Backend · AI/ML
