@@ -1,16 +1,24 @@
 <div align="center">
 
 ```
-╔══════════════════════════════════════════╗
-║  ARYAN SHARMA · Software Engineer        ║
-║  Backend  ·  AI/ML  ·  Systems           ║
-╚══════════════════════════════════════════╝
+┌─────────────────────────────────────────────────────────┐
+│                                                         │
+│   ▄▀█ █▀█ █▄█ ▄▀█ █▄░█   █▀ █░█ ▄▀█ █▀█ █▀▄▀█ ▄▀█   │
+│   █▀█ █▀▄ ░█░ █▀█ █░▀█   ▄█ █▀█ █▀█ █▀▄ █░▀░█ █▀█   │
+│                                                         │
+│         CS Undergrad · Applied AI & Systems             │
+│                                                         │
+└─────────────────────────────────────────────────────────┘
 ```
+
+[![GitHub](https://img.shields.io/badge/GitHub-Arynshr-181717?style=flat-square&logo=github)](https://github.com/Arynshr)
+[![Email](https://img.shields.io/badge/Email-aryan.shr.04@gmail.com-EA4335?style=flat-square&logo=gmail)](mailto:aryan.shr.04@gmail.com)
+
 </div>
 
 ---
 
-I enjoy building systems that are reliable and efficient — APIs that scale, pipelines that process data effectively, and ML systems that extend beyond experimentation. Currently exploring retrieval systems and LLM infrastructure, with a strong foundation in backend engineering.
+I build backend systems and applied ML pipelines — retrieval systems, LLM inference workflows, and evaluation-driven architectures. Currently focused on hybrid search and RAG systems. I read papers, implement them, and validate results.
 
 ---
 
@@ -18,82 +26,94 @@ I enjoy building systems that are reliable and efficient — APIs that scale, pi
 
 ```python
 aryan = {
-    "role"      : "Software Engineer  →  Backend · AI/ML · Systems",
+    "role"      : "Applied AI/ML · Backend · Systems",
     "education" : "B.Tech CSE · JIIT Noida",
-    "building"  : ["production APIs", "retrieval systems", "LLM pipelines"],
-    "available" : True,   # SDE · Backend · AI/ML
+    "building"  : ["LLM inference pipelines", "hybrid retrieval systems", "RL environments"],
+    "open_to"   : ["SDE", "Backend Engineering", "AI/ML Engineering", "Data Engineering"],
 }
 ```
 
 ---
 
-## `$ cat skills.txt`
+## `$ cat stack.json`
 
-| | Stack |
+| Domain | Technologies |
 |---|---|
 | **Languages** | Python · C/C++ · SQL |
-| **Backend** | FastAPI · REST · WebSockets · Async Python · Pydantic · SQLAlchemy |
-| **AI / ML** | NLP · Transformers · Scikit-learn · RL · Sentence-Transformers |
-| **Retrieval** | BM25 · FAISS · Qdrant · RAG · Dense + Sparse Search |
-| **LLM Tooling** | OpenAI SDK · Groq API · LangChain |
-| **Infra** | Docker · PostgreSQL · Git · pytest · Linux |
+| **Backend** | FastAPI · Async Python · REST · WebSockets · Pydantic · SQLAlchemy · PostgreSQL |
+| **AI / ML** | NLP · Transformers (BERT, FlanT5) · Scikit-learn · Reinforcement Learning · spaCy |
+| **Retrieval** | BM25 · FAISS · Qdrant · Dense + Sparse Search · RRF · CrossEncoder Reranking |
+| **LLM Tooling** | OpenAI SDK · Groq API · LangChain · RAG Pipelines · Prompt Engineering |
+| **Infra & Dev** | Docker · Git · pytest · Linux CLI · SQLite · MySQL |
 
 ---
 
-## `$ ls -l ./projects/`
+## `$ ls -la ./projects/`
 
-**[InventOps](https://github.com/Arynshr/InventOps)** — RL-based supply chain simulation engine
+### 🔹 [InventOps](https://github.com/Arynshr/InventOps) — RL Supply Chain Simulation Engine
+```
+Stack: Python · FastAPI · Groq (Llama-3.1) · OpenAI SDK · Docker · pytest · Pydantic v2
+```
+> OpenEnv-style RL environment for multi-echelon supply chain optimization
 
-```
-OpenEnv-compliant · 25 SKUs · multi-warehouse · stochastic demand · 3 difficulty levels
-```
-- Designed a full RL environment for multi-echelon supply chain optimization with deterministic reward grading
-- Cut LLM token usage by **87%** via observation compression on a Groq/Llama-3.1 inference pipeline
-- Shipped as a Dockerised FastAPI service, backed by a 17-test pytest suite with RLVR-based prompt tuning
+- Modeled stochastic demand across **25 SKUs** with multi-warehouse setups and configurable difficulty levels
+- Reduced LLM observation token size by **87%** via optimized state serialization in a Groq/Llama-3.1 pipeline
+- Built as a Dockerized FastAPI service with a **17-test pytest suite** for validation
 
 ---
 
-**[Scipher](https://github.com/Arynshr/Scipher)** — document intelligence pipeline for research papers
+### 🔹 [Scipher](https://github.com/Arynshr/Scipher) — Document ETL & NLP Pipeline
+```
+Stack: Python · FastAPI · Docling · BERT · FlanT5 · spaCy · SQLAlchemy · SQLite · Docker
+```
+> Multi-stage pipeline for converting academic PDFs into structured data
 
-```
-FastAPI · Docling · BERT · FlanT5 · async · WebSocket
-```
-- Multi-stage pipeline: PDF parsing → section classification → entity extraction → summarization + glossary
-- BERT classifier hitting **92% section accuracy**; FlanT5 for abstractive summarization
-- Async microservice with WebSocket support, Pydantic validation, and structured logging
+- End-to-end flow: parsing → section classification (BERT, **92% accuracy**) → NER (spaCy) → summarization (FlanT5) → glossary generation
+- Async FastAPI service with WebSocket support, Pydantic-validated I/O, and integrated logging
 
 ---
 
-**[HybridIR](https://github.com/Arynshr/Neural_search)** — hybrid search & retrieval system *(ongoing)*
+### 🔹 [HybridIR](https://github.com/Arynshr/Neural_search) — Hybrid Retrieval System *(ongoing)*
+```
+Stack: Python · FastAPI · BM25 · Qdrant · sentence-transformers · CrossEncoder · Groq API · Tavily
+```
+> Hybrid search system combining sparse and dense retrieval with reranking
 
-```
-BM25 · sentence-transformers · Milvus · RRF · MS MARCO · Precision@K · MRR · nDCG
-```
-- Combines sparse (BM25) and dense (sentence-transformers + Milvus Lite) retrieval with Reciprocal Rank Fusion
-- Evaluation pipeline on MS MARCO with latency benchmarking and metric tracking
-- Building agentic query router and live Textual interface for side-by-side retrieval comparison
+- BM25 + Qdrant dense retrieval fused via **Reciprocal Rank Fusion (RRF)** with CrossEncoder reranking
+- Evaluated on labeled queries using **Precision@K, MRR, nDCG@5**; targeting measurable improvement over BM25 baseline
+- Web-augmented retrieval via Tavily; side-by-side retrieval comparison UI via Textual
 
 ---
 
-## `$ cat /dev/current`
+### 🔹 [TokenFlow](https://github.com/Arynshr/TokenFlow) + [BPE Implementation](https://github.com/Arynshr/Paper-Implementation) — Subword Tokenization
+```
+Stack: Python · NLTK · Regex · FastAPI · Pydantic · JSON · Pickle
+```
+> Implementation of Sennrich et al. (2016) BPE for Neural Machine Translation
+
+- Built merge-rule learning, subword segmentation, and vocabulary construction from scratch
+- Configurable tokenizer with Unicode (NFKC) normalization, regex-based preprocessing, and pair statistics caching
+- Compared OOV handling against word-level and character-level baselines
+
+---
+
+## `$ cat /proc/current`
 
 ```
-→ Extending HybridIR: agentic query routing + multi-stage RAG
-→ Evaluation-driven LLM pipeline optimization
-→ Scalable async backend patterns for ML-in-production
+→ Extending HybridIR: query routing + multi-stage reranking + web-augmented retrieval
+→ Evaluating LLM pipelines across latency and output quality tradeoffs
+→ Studying IR metrics, vector indexing, and inference optimization
 ```
 
 ---
 
 ## `$ echo $CONTACT`
 
-```
-Open to SDE · Backend · AI/ML · Systems Engineering internships
-aryan.shr.04@gmail.com
+```bash
+# Open to: SDE · Backend Engineering · AI/ML Engineering · Data Engineering
+
+echo "aryan.shr.04@gmail.com"
+open "https://linkedin.com/in/arynshrma"
 ```
 
 ---
-
-<div align="center">
-<sub>reads papers · ships code · breaks things · fixes them</sub>
-</div>
