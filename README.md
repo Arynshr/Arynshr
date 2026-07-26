@@ -18,7 +18,7 @@
 
 ---
 
-I build backend systems and applied ML pipelines — retrieval systems, LLM inference workflows, and evaluation-driven architectures. Currently focused on hybrid search and RAG systems. I read papers, implement them, and validate results.
+I build backend systems and applied ML pipelines:- retrieval systems, LLM inference workflows, and evaluation-driven architectures. Currently focused on hybrid search and RAG systems. I read papers, implement them, and validate results.
 
 ---
 
@@ -40,7 +40,7 @@ aryan = {
 | Domain | Technologies |
 |---|---|
 | **Languages** | Python · C/C++ · SQL |
-| **Backend** | FastAPI · Async Python · REST · WebSockets · Pydantic · SQLAlchemy · PostgreSQL |
+| **Backend** | FastAPI · Async Python · REST APIs · WebSockets · Pydantic · SQLAlchemy · PostgreSQL |
 | **AI / ML** | NLP · Transformers (BERT, FlanT5) · Scikit-learn · Reinforcement Learning · spaCy |
 | **Retrieval** | BM25 · FAISS · Qdrant · Dense + Sparse Search · RRF · CrossEncoder Reranking |
 | **LLM Tooling** | OpenAI SDK · Groq API · LangChain · RAG Pipelines · Prompt Engineering |
@@ -73,7 +73,7 @@ Stack: Python · FastAPI · Docling · BERT · FlanT5 · spaCy · SQLAlchemy · 
 
 ---
 
-### 🔹 [HybridIR](https://github.com/Arynshr/Neural_search) — Hybrid Retrieval System *(ongoing)*
+### 🔹 [HybridIR](https://github.com/Arynshr/Neural_search) — Hybrid Retrieval System 
 ```
 Stack: Python · FastAPI · BM25 · Qdrant · sentence-transformers · CrossEncoder · Groq API · Tavily
 ```
@@ -82,18 +82,6 @@ Stack: Python · FastAPI · BM25 · Qdrant · sentence-transformers · CrossEnco
 - BM25 + Qdrant dense retrieval fused via **Reciprocal Rank Fusion (RRF)** with CrossEncoder reranking
 - Evaluated on labeled queries using **Precision@K, MRR, nDCG@5**; targeting measurable improvement over BM25 baseline
 - Web-augmented retrieval via Tavily; side-by-side retrieval comparison UI via Textual
-
----
-
-### 🔹 [TokenFlow](https://github.com/Arynshr/TokenFlow) + [BPE Implementation](https://github.com/Arynshr/Paper-Implementation) — Subword Tokenization
-```
-Stack: Python · NLTK · Regex · FastAPI · Pydantic · JSON · Pickle
-```
-> Implementation of Sennrich et al. (2016) BPE for Neural Machine Translation
-
-- Built merge-rule learning, subword segmentation, and vocabulary construction from scratch
-- Configurable tokenizer with Unicode (NFKC) normalization, regex-based preprocessing, and pair statistics caching
-- Compared OOV handling against word-level and character-level baselines
 
 ---
 
